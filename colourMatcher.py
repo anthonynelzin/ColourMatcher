@@ -118,5 +118,12 @@ def main():
     
     print(name)
     
+def colourMatcher(path):
+    hue = get_colour(path, 4)
+    colour = conform_colour(palette, hue)
+    name = name_colour(palette, colour)
+    
+    return name
+    
 if __name__ == '__main__':
     main()
