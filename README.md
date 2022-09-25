@@ -5,24 +5,24 @@ ColourMatcher extracts the dominant hue from an image and returns its name from 
 | Hue (LCH) | Hue (HSL) | Name (Goya) |
 |:--|:--|:--|
 | X | 0.00000 | black |
-| 40 | 9.81818 | sienna |
-| 60 | 28.54838 | brown |
-| 80 | 40.57142 | khaki |
-| 100 | 58.53658 | olive |
-| 120 | 81.62790 | sage |
-| 140 | 130.58823 | jungle |
-| 160 | 150.96774 | green |
-| 180 | 168.51063 | forest |
-| 200 | 184.66019 | lichen |
-| 220 | 195.59055 | turquoise |
-| 240 | 202.60273 | petrol |
-| 260 | 206.70967 | blue |
-| 280 | 209.99999 | indigo |
-| 300 | 245.24999 | violet |
-| 320 | 286.40000 | purple |
-| 340 | 317.87234 | zinzolin |
-| 0 | 334.21052 | garnet |
-| 20 | 349.82142 | tomato |
+| 40 | 9.35779 | brick |
+| 60 | 26.89655 | brown |
+| 80 | 39.58763 | khaki |
+| 100 | 58.40000 | olive |
+| 120 | 84.30379 | moss |
+| 140 | 129.39759 | forest |
+| 160 | 149.64705 | mint |
+| 180 | 167.58620 | seafoam |
+| 200 | 185.62499 | turquoise |
+| 220 | 196.99999 | marine |
+| 240 | 203.47825 | cyan |
+| 260 | 207.75510 | azure |
+| 280 | 211.21621 | indigo |
+| 300 | 243.84615 | mauve |
+| 320 | 285.78947 | violet |
+| 340 | 317.05263 | zinzolin |
+| 0 | 333.10345 | garnet |
+| 20 | 348.31858 | coral |
 
 Those hues stem from an HSL conversion of my “Goya” LCH system of colours, rounded to five decimals. ColourMatcher uses a bisect algorithm to find the closest hue, without caring for saturation/chroma nor lightness. Black is chosen only if the hue is equal to 0.
 
