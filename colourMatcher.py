@@ -17,24 +17,24 @@ from PIL import Image
 from sklearn.cluster import MiniBatchKMeans
 
 palette = {
-	'garnet': 333.10345,
-    'coral': 348.31858,
-    'brick': 9.35779,
-    'brown': 26.89655,
-    'khaki': 39.58763,
-    'olive': 58.40000,
-    'moss': 84.30379,
-    'forest': 129.39759,
-    'mint': 149.64705,
-    'seafoam': 167.58620,
-    'turquoise': 185.62499,
-    'marine': 196.99999,
-    'cyan': 203.47825,
-    'azure': 207.75510,
-    'indigo': 211.21621,
-    'mauve': 243.84615,
-    'violet': 285.78947,
-    'zinzolin': 317.05263,
+	'garnet': 341.25000,
+    'coral': 357.07317,
+    'brick': 11.86813,
+    'brown': 24.99999,
+    'khaki': 37.49999,
+    'olive': 53.23943,
+    'moss': 78.68852,
+    'forest': 115.38461,
+    'mint': 151.53845,
+    'seafoam': 171.28204,
+    'turquoise': 181.58940,
+    'marine': 188.52070,
+    'cyan': 193.44262,
+    'azure': 205.03936,
+    'indigo': 220.44943,
+    'mauve': 250.81967,
+    'violet': 287.77778,
+    'zinzolin': 321.49254,
 }
 
 # Get the dominant colour of the image
@@ -93,7 +93,7 @@ def conform_colour(palette, hue):
 # Name the colour
 def name_colour(palette, colour):
     if colour == "0":
-        name = 'black'
+        name = 'mono'
     else:
         name = list(palette.keys())[list(palette.values()).index(colour)]
     
